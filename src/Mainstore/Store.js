@@ -3,9 +3,11 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import loginReducer from '../Login//redux/reducers/loginReducer';
+import signupReducer from '../signup/redux/reducers/signupReducer';
 
 const reducers = combineReducers({
-    login: loginReducer
+    login: loginReducer,
+    signup: signupReducer
 });
 
 const enhancers = compose(
