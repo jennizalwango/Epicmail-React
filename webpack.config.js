@@ -18,8 +18,8 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/,
-                loaders: ['style-loader', 'css-loader']
+                test: /\.scss$/,
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.html$/,
@@ -43,6 +43,6 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     resolve: {
-        extensions: ['.js', '.jsx', 'json']
+        extensions: ['.js', '.jsx', 'json', '.scss']
     }
 };
