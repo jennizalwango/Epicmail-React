@@ -50,7 +50,7 @@ describe('Testing Auth Action', () => {
       },
     };
     return store.dispatch(loginAction(userData, props)).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
+      expect(store.getActions()[0]).toEqual(expectedActions[0]);
     });
   });
 

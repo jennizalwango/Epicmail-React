@@ -68,7 +68,7 @@ const Login = (
                         </button>
                     </div>
                     <p className="mypara2">
-                    Dont have an account? signup
+                    Dont have an account? <a href="/signup">Signup</a>
                     </p>
                 </Loader>
 

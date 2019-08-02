@@ -1,9 +1,9 @@
-import { toast } from 'react-toastify';
+import { ToastsStore } from 'react-toasts';
 import axios from 'axios';
 import loginTypes from '../types';
 import loginUrl from '../loginUrls';
 
-const loginAction = (userdata) => (dispatch) => {
+const loginAction = (userdata, props) => (dispatch) => {
     dispatch({
         type: loginTypes.IS_LOGGING_IN
     });
@@ -15,15 +15,16 @@ const loginAction = (userdata) => (dispatch) => {
         }
     )
         .then((res) => {
-            console.log(res);
-            toast.success('Logged in', 'success', 5000);
-            localStorage.setItem('auth-token', res.data.user.token);
-            localStorage.setItem('username', res.data.user.username);
+            ToastsStore.success('Logged in', 'success', 5000);
+            localStorage.setItem('auth-token', res.data.data[0].token);
+            localStorage.setItem('fistname', res.data.data[0].user.firstname);
+            localStorage.setItem('email', res.data.data[0].user.email);
             dispatch({
                 type: loginTypes.LOGIN_SUCCESS,
                 payload: res.data.user
             });
-            window.location = '/';
+            // Routing to the inbox on sucessful login
+            props.history.push('/messages');
         })
         .catch((error) => {
             dispatch({

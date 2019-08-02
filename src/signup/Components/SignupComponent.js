@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../Login/LoginStyles/login.scss';
+import '../SignupStyle/SignupStyle.scss';
 
 const Loader = require('react-loader');
 
@@ -18,7 +18,7 @@ const Signup = (
         isLoading
     },
 ) => (
-    <div className="Login-container">
+    <div className="signup-container">
         <div className="header">
             <h2>EPIC MAIL</h2>
             <p><i>"Use this web application to reach out to your family and friends
@@ -26,7 +26,7 @@ const Signup = (
         </div>
         <div className="heading" />
         <div className="myform">
-            <form>
+            <form className="signupform" >
                 <h3>Signup</h3>
                 <hr/>
                 {
@@ -83,7 +83,7 @@ const Signup = (
                         </button>
                     </div>
                     <p className="mypara2">
-           You have an account Login
+                    You have an account? <a href="/login"> Login</a>
                     </p>
                 </Loader>
             </form>
@@ -109,6 +109,5 @@ Signup.defaultProps = {
     SignupFailed: false,
     isLoading: false
 };
-
 
 export default Signup;

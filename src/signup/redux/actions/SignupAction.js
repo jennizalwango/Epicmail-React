@@ -3,7 +3,7 @@ import axios from 'axios';
 import signupTypes from '../types';
 import signupUrl from '../signpUrls';
 
-const signupAction = (signupdata) => (dispatch) => {
+const signupAction = (signupdata, props) => (dispatch) => {
     dispatch({
         type: signupTypes.IS_SIGNNIG_UP
     });
@@ -16,11 +16,12 @@ const signupAction = (signupdata) => (dispatch) => {
     )
         .then((res) => {
             toast.success('signned up', 'success', 5000);
+            console.log(res);
             dispatch({
                 type: signupTypes.SIGNUP_SUCCESS,
                 payload: res.data
             });
-            window.location = '/';
+            props.history.push('/messages');
         })
         .catch((error) => {
             dispatch({
