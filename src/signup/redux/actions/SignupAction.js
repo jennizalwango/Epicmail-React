@@ -15,8 +15,8 @@ const signupAction = (signupdata, props) => (dispatch) => {
         }
     )
         .then((res) => {
-            toast.success('signned up', 'success', 5000);
-            console.log(res);
+            toast.success("Successfully signed up", {
+                position: toast.POSITION.TOP_CENTER});
             dispatch({
                 type: signupTypes.SIGNUP_SUCCESS,
                 payload: res.data

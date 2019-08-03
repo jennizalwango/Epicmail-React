@@ -43,13 +43,13 @@ const Signup = (
                 <div className="form-input" id="errormessage">
                     <input className="the-Input" type="firstname" value={firstname} placeholder="firstname" name="firstname" onChange={onChange} />
                     {
-                        errors.userPassword && (<div className="errors">{errors.userfirstname}</div>)
+                        errors.userfirstname && (<div className="errors">{errors.userfirstname}</div>)
                     }
                 </div>
                 <div className="form-input" id="errormessage">
                     <input className="the-Input" type="lastname" value={lastname} placeholder="lastname" name="lastname" onChange={onChange} />
                     {
-                        errors.userPassword && (<div className="errors">{errors.userlastname}</div>)
+                        errors.userlastname && (<div className="errors">{errors.userlastname}</div>)
                     }
                 </div>
 

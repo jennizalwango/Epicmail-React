@@ -62,18 +62,19 @@ export class SignupContainer extends Component {
           isAdmin: true
       };
 
-      if (email === '') {
+        if (firstname === '') {
+        this.setState({ errors: { userfirstname: 'firstname field required' } });
+        }
+        else if (lastname === '') {
+            this.setState({ errors: { userlastname: 'lastname field is required' } });
+        }
+      else if (email === '') {
           this.setState({ errors: { userEmail: 'Email field required' } });
-      }
-      if (password === '') {
+      }else if (password === '') {
           this.setState({ errors: { userPassword: 'Password field is required' } });
       }
-      if (firstname === '') {
-          this.setState({ errors: { userfirstname: 'firstname field required' } });
-      }
-      if (lastname === '') {
-          this.setState({ errors: { userlastname: 'lastname field is required' } });
-      }
+      
+      
       const { propsSignupAction } = this.props;
 
       const { errors } = this.state;

@@ -2,6 +2,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/deeb9e124cbf9aced9bb/maintainability)](https://codeclimate.com/github/jennizalwango/Epicmail-React/maintainability)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/deeb9e124cbf9aced9bb/test_coverage)](https://codeclimate.com/github/jennizalwango/Epicmail-React/test_coverage)
+
 ## project name 
   Epic Mail
 

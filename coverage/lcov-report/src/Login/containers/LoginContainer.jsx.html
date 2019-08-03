@@ -153,10 +153,7 @@
 <a name='L105'></a><a href='#L105'>105</a>
 <a name='L106'></a><a href='#L106'>106</a>
 <a name='L107'></a><a href='#L107'>107</a>
-<a name='L108'></a><a href='#L108'>108</a>
-<a name='L109'></a><a href='#L109'>109</a>
-<a name='L110'></a><a href='#L110'>110</a>
-<a name='L111'></a><a href='#L111'>111</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -193,7 +190,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -210,8 +206,6 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -274,106 +268,103 @@ import loginUtil from '../redux/validations';
 import loginAction from '../redux/actions/LoginAction';
 &nbsp;
 export class LoginContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-      errors: {
-        invalid_email: false,
-      },
-    };
-  }
-&nbsp;
-  onChange = (event) =&gt; {
-    this.setState({ [event.target.name]: event.target.value });
-&nbsp;
-    const { target } = event;
-    const { name, value } = target;
-    const { errors } = this.state;
-    switch (name) {
-      case 'email':
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (!this.checkValidEmail(value)) {
-          this.setState({ errors: { userEmail: 'Please provide a valid email address' } });
-          errors.invalid_email = true;
-        } else {
-<span class="cstat-no" title="statement not covered" >          this.setState({ errors: { userEmail: '' } });</span>
-<span class="cstat-no" title="statement not covered" >          errors.invalid_email = false;</span>
-        }
-        break;
-<span class="branch-1 cbranch-no" title="branch not covered" >      default:</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+    constructor (props) {
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+            errors: {
+                invalid_email: false
+            }
+        };
     }
 &nbsp;
-    this.setState({ [event.target.name]: event.target.value });
+  onChange = (event) =&gt; {
+      this.setState({ [event.target.name]: event.target.value });
+&nbsp;
+      const { target } = event;
+      const { name, value } = target;
+      const { errors } = this.state;
+      switch (name) {
+          case 'email':
+              <span class="missing-if-branch" title="else path not taken" >E</span>if (!this.checkValidEmail(value)) {
+                  this.setState({ errors: { userEmail: 'Please provide a valid email address' } });
+                  errors.invalid_email = true;
+              } else {
+<span class="cstat-no" title="statement not covered" >                  this.setState({ errors: { userEmail: '' } });</span>
+<span class="cstat-no" title="statement not covered" >                  errors.invalid_email = false;</span>
+              }
+              break;
+<span class="branch-1 cbranch-no" title="branch not covered" >          default:</span>
+<span class="cstat-no" title="statement not covered" >              break;</span>
+      }
+      this.setState({ [event.target.name]: event.target.value });
   }
 &nbsp;
   checkValidEmail = (userEmail) =&gt; {
-    const mailFormat = loginUtil.LOGIN_UTILS;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (userEmail.match(mailFormat)) {
-<span class="cstat-no" title="statement not covered" >      return true;</span>
-    }
-    return false;
+      const mailFormat = loginUtil.LOGIN_UTILS;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (userEmail.match(mailFormat)) {
+<span class="cstat-no" title="statement not covered" >          return true;</span>
+      }
+      return false;
   };
 &nbsp;
   handleSubmit = (event) =&gt; {
-    event.preventDefault();
-    const { email, password } = this.state;
-    const userdata = {
-      user: {
-        email,
-        password,
-      },
-    };
+      event.preventDefault();
+      const { email, password } = this.state;
+      const userdata = {
+          email: email,
+          password: password
+      };
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (email === '') {
-<span class="cstat-no" title="statement not covered" >      this.setState({ errors: { userEmail: 'Email field required' } });</span>
-    }
-    if (password === '') {
-      this.setState({ errors: { userPassword: 'Password field is required' } });
-    }
-    const { propsLoginAction } = this.props;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (email === '') {
+<span class="cstat-no" title="statement not covered" >          this.setState({ errors: { userEmail: 'Email field required' } });</span>
+      }
+      if (password === '') {
+          this.setState({ errors: { userPassword: 'Password field is required' } });
+      }
+      const { propsLoginAction } = this.props;
 &nbsp;
-    const { errors } = this.state;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (!errors.invalid_email &amp;&amp; errors.userEmail === '') {
-<span class="cstat-no" title="statement not covered" >      propsLoginAction(userdata, this.props);</span>
-    }
+      const { errors } = this.state;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!errors.invalid_email &amp;&amp; errors.userEmail === '') {
+<span class="cstat-no" title="statement not covered" >          propsLoginAction(userdata, this.props);</span>
+      }
   }
 &nbsp;
-  render() {
-    const { email, password, errors } = this.state;
-    const {
-      isLoggingIn,
-      isLoading,
-      loginFailed,
-    } = this.props;
-    return (
-      &lt;Login
-        handleSubmit={this.handleSubmit}
-        onChange={this.onChange}
-        email={email}
-        password={password}
-        errors={errors}
-        isLoggingIn={isLoggingIn}
-        loginFailed={loginFailed}
-        isLoading={isLoading}
-      /&gt;
-    );
+  render () {
+      const { email, password, errors } = this.state;
+      const {
+          isLoggingIn,
+          isLoading,
+          loginFailed
+      } = this.props;
+      return (
+          &lt;Login
+              handleSubmit={this.handleSubmit}
+              onChange={this.onChange}
+              email={email}
+              password={password}
+              errors={errors}
+              isLoggingIn={isLoggingIn}
+              loginFailed={loginFailed}
+              isLoading={isLoading}
+          /&gt;
+      );
   }
 }
 &nbsp;
 LoginContainer.propTypes = {
-  propsLoginAction: PropTypes.func.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-  isLoggingIn: PropTypes.bool.isRequired,
-  loginFailed: PropTypes.bool.isRequired,
+    propsLoginAction: PropTypes.func.isRequired,
+    isLoading: PropTypes.bool.isRequired,
+    isLoggingIn: PropTypes.bool.isRequired,
+    loginFailed: PropTypes.bool.isRequired
 };
 &nbsp;
 const mapStateToProps = <span class="fstat-no" title="function not covered" >st</span>ate =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
-  login: state.login,
-  isLoggingIn: state.login.is_logging_in,
-  loginFailed: state.login.login_failed,
-  isLoading: state.login.isLoading,
+    login: state.login,
+    isLoggingIn: state.login.is_logging_in,
+    loginFailed: state.login.login_failed,
+    isLoading: state.login.isLoading
 });
 export default connect(mapStateToProps, { propsLoginAction: loginAction })(LoginContainer);
 &nbsp;</pre></td></tr>
@@ -382,7 +373,7 @@ export default connect(mapStateToProps, { propsLoginAction: loginAction })(Login
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Jul 24 2019 14:09:26 GMT+0300 (East Africa Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Aug 03 2019 23:53:23 GMT+0300 (East Africa Time)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

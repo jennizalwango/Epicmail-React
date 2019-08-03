@@ -1,7 +1,8 @@
-import { ToastsStore } from 'react-toasts';
+import { toast } from 'react-toastify';
 import axios from 'axios';
 import loginTypes from '../types';
 import loginUrl from '../loginUrls';
+
 
 const loginAction = (userdata, props) => (dispatch) => {
     dispatch({
@@ -15,7 +16,10 @@ const loginAction = (userdata, props) => (dispatch) => {
         }
     )
         .then((res) => {
-            ToastsStore.success('Logged in', 'success', 5000);
+            toast.success("Successfully logged in", {
+                position: toast.POSITION.TOP_CENTER
+              });
+        
             localStorage.setItem('auth-token', res.data.data[0].token);
             localStorage.setItem('fistname', res.data.data[0].user.firstname);
             localStorage.setItem('email', res.data.data[0].user.email);
