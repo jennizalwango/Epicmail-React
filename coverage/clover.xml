@@ -1,219 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1563981418232" clover="3.2.0">
-  <project timestamp="1563981418232" name="All files">
-    <metrics statements="244" coveredstatements="216" conditionals="90" coveredconditionals="68" methods="83" coveredmethods="73" elements="417" coveredelements="357" complexity="0" loc="244" ncloc="244" packages="32" files="45" classes="45"/>
-    <package name="src">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="App.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/App.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="19" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Articles.components">
-      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
-      <file name="AllArticles.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Articles/components/AllArticles.jsx">
-        <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Articles.redux">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="types.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Articles/redux/types.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Articles.redux.actions">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-      <file name="AllArticlesActions.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Articles/redux/actions/AllArticlesActions.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Articles.redux.reducers">
-      <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <file name="allArticlesReducer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Articles/redux/reducers/allArticlesReducer.jsx">
-        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="7" type="cond" truecount="4" falsecount="0"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="30" count="4" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Landing.components">
-      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-      <file name="ActionButton.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/components/ActionButton.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-      </file>
-      <file name="LatestArticles.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/components/LatestArticles.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
-      </file>
-      <file name="RecommendArticles.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/components/RecommendArticles.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="11" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Landing.containers">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <file name="Landing.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/containers/Landing.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Landing.redux">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="types.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/redux/types.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Landing.redux.actions">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <file name="latestArticlesAction.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/redux/actions/latestArticlesAction.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Landing.redux.reducers">
-      <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <file name="latestArticlesReducer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Landing/redux/reducers/latestArticlesReducer.jsx">
-        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="7" type="cond" truecount="4" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Mainstore">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="Store.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/Mainstore/Store.js">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="24" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.ViewArticle.components">
-      <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <file name="VeiwArticleComponent.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/components/VeiwArticleComponent.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="59" count="3" type="stmt"/>
-        <line num="63" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.ViewArticle.container">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-      <file name="ViewArticleContainer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/container/ViewArticleContainer.jsx">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.ViewArticle.redux">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="ArticleUrl.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/redux/ArticleUrl.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-      </file>
-      <file name="types.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/redux/types.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.ViewArticle.redux.Actions">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="ViewArticleAction.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/redux/Actions/ViewArticleAction.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.ViewArticle.redux.reducers">
-      <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <file name="ViewArticlereducer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/ViewArticle/redux/reducers/ViewArticlereducer.jsx">
-        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="8" count="6" type="cond" truecount="4" falsecount="0"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.__mock__">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="articleData.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/__mock__/articleData.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="5" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.Login.components">
+<coverage generated="1564866818644" clover="3.2.0">
+  <project timestamp="1564866818644" name="All files">
+    <metrics statements="63" coveredstatements="51" conditionals="30" coveredconditionals="17" methods="12" coveredmethods="11" elements="105" coveredelements="79" complexity="0" loc="63" ncloc="63" packages="5" files="7" classes="7"/>
+    <package name="components">
       <metrics statements="5" coveredstatements="5" conditionals="10" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <file name="LoginComponent.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/components/LoginComponent.jsx">
+      <file name="LoginComponent.jsx" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/components/LoginComponent.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="10" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="84" count="3" type="stmt"/>
-        <line num="94" count="3" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="91" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.auth.Login.containers">
+    <package name="containers">
       <metrics statements="38" coveredstatements="32" conditionals="14" coveredconditionals="9" methods="6" coveredmethods="5"/>
-      <file name="LoginContainer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/containers/LoginContainer.jsx">
+      <file name="LoginContainer.jsx" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/containers/LoginContainer.jsx">
         <metrics statements="38" coveredstatements="32" conditionals="14" coveredconditionals="9" methods="6" coveredmethods="5"/>
         <line num="10" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
@@ -230,251 +32,73 @@
         <line num="33" count="0" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
-        <line num="44" count="4" type="stmt"/>
-        <line num="45" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="4" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
         <line num="52" count="6" type="stmt"/>
         <line num="53" count="6" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
-        <line num="61" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="64" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="5" type="stmt"/>
-        <line num="67" count="6" type="stmt"/>
-        <line num="69" count="6" type="stmt"/>
-        <line num="70" count="6" type="cond" truecount="3" falsecount="1"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="76" count="17" type="stmt"/>
-        <line num="81" count="17" type="stmt"/>
-        <line num="82" count="17" type="stmt"/>
-        <line num="97" count="2" type="stmt"/>
-        <line num="104" count="2" type="stmt"/>
+        <line num="58" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="61" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="5" type="stmt"/>
+        <line num="64" count="6" type="stmt"/>
+        <line num="66" count="6" type="stmt"/>
+        <line num="67" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="73" count="17" type="stmt"/>
+        <line num="78" count="17" type="stmt"/>
+        <line num="79" count="17" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.auth.Login.redux">
+    <package name="redux">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="loginUrls.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/redux/loginUrls.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-      </file>
-      <file name="types.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/redux/types.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-      </file>
-      <file name="validations.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/redux/validations.js">
+      <file name="loginUrls.js" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/redux/loginUrls.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
       </file>
-    </package>
-    <package name="src.auth.Login.redux.actions">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-      <file name="LoginAction.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/redux/actions/LoginAction.js">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.Login.redux.reducers">
-      <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <file name="loginReducer.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/Login/redux/reducers/loginReducer.js">
-        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="15" count="6" type="cond" truecount="4" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="39" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.signup">
-      <metrics statements="28" coveredstatements="17" conditionals="15" coveredconditionals="9" methods="2" coveredmethods="1"/>
-      <file name="Validation.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/Validation.js">
-        <metrics statements="16" coveredstatements="16" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+      <file name="types.js" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/redux/types.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="17" count="5" type="cond" truecount="3" falsecount="0"/>
-        <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="33" count="5" type="stmt"/>
       </file>
-      <file name="helper.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/helper.js">
-        <metrics statements="12" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+      <file name="validations.js" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/redux/validations.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.auth.signup.components">
-      <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="5"/>
-      <file name="SignUp.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/components/SignUp.jsx">
-        <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="5"/>
+    <package name="redux.actions">
+      <metrics statements="10" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="LoginAction.js" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/redux/actions/LoginAction.js">
+        <metrics statements="10" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="16" type="stmt"/>
-        <line num="12" count="16" type="stmt"/>
-        <line num="14" count="16" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="26" count="16" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
-        <line num="102" count="2" type="stmt"/>
-        <line num="107" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.signup.redux">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="types.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/redux/types.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.signup.redux.actions">
-      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
-      <file name="signUpAction.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/redux/actions/signUpAction.jsx">
-        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.signup.redux.reducer">
-      <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="signUpReducer.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/signup/redux/reducer/signUpReducer.jsx">
-        <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="10" count="3" type="cond" truecount="1" falsecount="3"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.auth.socialAuth.facebook.components">
-      <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-      <file name="Facebook.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/socialAuth/facebook/components/Facebook.jsx">
-        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.auth.socialAuth.google.components">
-      <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-      <file name="Google.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/auth/socialAuth/google/components/Google.jsx">
-        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.commons">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="history.js" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/history.js">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.commons.components">
-      <metrics statements="18" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
-      <file name="Article.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/Article.jsx">
-        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="63" count="6" type="stmt"/>
-        <line num="68" count="6" type="stmt"/>
-      </file>
-      <file name="ErrorLabel.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/ErrorLabel.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-      </file>
-      <file name="FooterSection.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/FooterSection.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
-      </file>
-      <file name="HeaderSection.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/HeaderSection.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="Loading.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/Loading.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="2" type="stmt"/>
-      </file>
-      <file name="MenuBar.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/MenuBar.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="NavSection.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/components/NavSection.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.commons.containers">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="CustomButton.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/containers/CustomButton.jsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="6" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-      </file>
-      <file name="Search.jsx" path="/Users/jennyzalwango/Desktop/forever_realers/ah-frontend-realers/src/commons/containers/Search.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
+    <package name="redux.reducers">
+      <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="loginReducer.js" path="/Users/jennyzalwango/Desktop/Bootcamp-Project/Epicmail-React/src/Login/redux/reducers/loginReducer.js">
+        <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="3" falsecount="2"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
       </file>
     </package>
   </project>

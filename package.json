@@ -11,7 +11,7 @@
     "build": "webpack -p",
     "lint": "eslint src",
     "test": "jest --watchAll",
-    "test:coverage": "jest --env=jsdom --coverage --no-cache --coverageDirectory=./test-reports/",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
     "lint:fix": "eslint --fix src"
   },
   "repository": {
@@ -44,6 +44,7 @@
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "coveralls": "^3.0.5",
     "css-loader": "^3.0.0",
     "enzyme-to-json": "^3.3.5",
     "eslint": "^5.16.0",
@@ -93,7 +94,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-star-rating-component": "^1.4.1",
-    "react-toastify": "^5.3.1",
+    "react-toastify": "^5.3.2",
     "react-toasts": "^3.0.3",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
