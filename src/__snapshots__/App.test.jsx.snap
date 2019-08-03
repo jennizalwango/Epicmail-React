@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+<BrowserRouter
+  history={History {}}
+>
+  <t
+    store={
+      t {
+        "_data": Object {
+          "classNames": "",
+          "message": "",
+          "status": "",
+          "timer": 0,
+        },
+        "_nextHandlerId": 0,
+        "_watchers": Array [],
+      }
+    }
+  />
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(LoginContainer)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/login"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(SignupContainer)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/signup"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(MessageContainer)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/messages"
+    />
+  </Switch>
+</BrowserRouter>
+`;

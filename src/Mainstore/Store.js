@@ -4,10 +4,12 @@ import {
 import thunk from 'redux-thunk';
 import loginReducer from '../Login//redux/reducers/loginReducer';
 import signupReducer from '../signup/redux/reducers/signupReducer';
+import FetchallMessagesReducers from '../fetchallMessges/redux/reducers/FetchallMessagesReducers';
 
 const reducers = combineReducers({
     login: loginReducer,
-    signup: signupReducer
+    signup: signupReducer,
+    fetchMessage: FetchallMessagesReducers
 });
 
 const enhancers = compose(

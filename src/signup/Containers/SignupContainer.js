@@ -110,7 +110,7 @@ SignupContainer.propTypes = {
     propsSignupAction: PropTypes.func.isRequired,
     isLoading: PropTypes.bool.isRequired,
     isSigningup: PropTypes.bool.isRequired,
-    SignupFailed: PropTypes.bool.isRequired
+    SignupFailed: PropTypes.bool
 };
 
 const mapStateToProps = state => ({

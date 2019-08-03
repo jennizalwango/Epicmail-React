@@ -1,0 +1,29 @@
+.right{
+    float: right;
+    padding: 15px;
+    text-decoration: None;
+    color:#ffffff;
+    }
+nav{
+    background-color: #524d4d;
+    color:white;
+    overflow: hidden;
+    flex-direction: row;
+    margin-top:-15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+.ul{
+    margin: 0%;
+    padding: 0%;
+}
+ul li a{
+    background-color: #524d4d;
+    border-bottom:1px solid #111111;
+    display: block;
+    width: 200px;
+    padding:30px;
+    color: #ffffff;
+    text-decoration: none;
+}

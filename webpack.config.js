@@ -1,48 +1,57 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+var path = require('path');
 module.exports = {
-    entry: './src/index.jsx',
-    output: {
-        path: path.join(__dirname, '/dist'),
-        filename: 'index.js',
-        publicPath: '/'
+  entry: './src/index.jsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
+    publicPath: '/'
+  },
+  module: {
+    rules: [{
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+      },
     },
-    devtool: 'source-maps',
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
-            },
-            {
-                test: /\.scss$/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            {
-                test: /\.html$/,
-                use: {
-                    loader: 'html-loader'
-                }
-            }
-        ]
+    {
+      test: /\.(scss|css)$/,
+      use: ['style-loader', // creates style nodes from JS strings
+        'css-loader', // translates CSS into CommonJS
+        'sass-loader', // compiles Sass to CSS, using Node Sass by default
+      ],
     },
-    devServer: {
-        contentBase: path.join(__dirname, 'src'),
-        historyApiFallback: {
-            disableDotRule: true
-        }
+    {
+      test: /\.html$/,
+      use: [{
+        loader: 'html-loader',
+      }],
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'index.html'
-
-        }),
-        new webpack.HotModuleReplacementPlugin()
+    {
+      test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name]-[hash:8].[ext]',
+          },
+        },
+      ],
+    },
     ],
-    resolve: {
-        extensions: ['.js', '.jsx', 'json', '.scss']
-    }
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.tsx', '.ts'],
+  },
+  devServer: {
+    historyApiFallback: true,
+  },
 };
