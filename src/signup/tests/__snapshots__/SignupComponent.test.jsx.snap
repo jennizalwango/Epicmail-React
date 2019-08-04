@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup  matches snapshot 1`] = `
+<div
+  className="signup-container"
+>
+  <div
+    className="header"
+  >
+    <h2>
+      EPIC MAIL
+    </h2>
+    <p>
+      <i>
+        "Use this web application to reach out to your family and friends from any anywhere the World"
+      </i>
+    </p>
+  </div>
+  <div
+    className="heading"
+  />
+  <div
+    className="myform"
+  >
+    <form
+      className="signupform"
+    >
+      <h3>
+        Signup
+      </h3>
+      <hr />
+      <span />
+      <br />
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          className="the-Input"
+          name="firstname"
+          onChange={[MockFunction]}
+          placeholder="firstname"
+          type="firstname"
+          value=""
+        />
+      </div>
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          className="the-Input"
+          name="lastname"
+          onChange={[MockFunction]}
+          placeholder="lastname"
+          type="lastname"
+          value=""
+        />
+      </div>
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          className="the-Input"
+          id="userEmail"
+          name="email"
+          onChange={[MockFunction]}
+          placeholder="Email"
+          required={true}
+          type="text"
+          value=""
+        />
+        <span />
+      </div>
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          className="the-Input"
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+      </div>
+      <Component
+        component="div"
+        loaded={true}
+        loadedClassName="loadedContent"
+        parentClassName="loader"
+      >
+        <div
+          className="form-input"
+        >
+          <button
+            className="mybtn"
+            disabled={false}
+            id="mybtn"
+            onClick={[MockFunction]}
+            type="button"
+          >
+            <span>
+              Signup
+            </span>
+          </button>
+        </div>
+        <p
+          className="mypara2"
+        >
+          You have an account? 
+          <a
+            href="/login"
+          >
+             Login
+          </a>
+        </p>
+      </Component>
+    </form>
+  </div>
+</div>
+`;

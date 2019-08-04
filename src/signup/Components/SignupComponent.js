@@ -78,7 +78,7 @@ const Signup = (
                 </div>
                 <Loader loaded={!isLoading}>
                     <div className="form-input">
-                        <button className="mybtn" type="button" onClick={handleSubmit} disabled={isSigningup}>
+                        <button id="mybtn" className="mybtn" type="button" onClick={handleSubmit} disabled={isSigningup}>
                             { isSigningup ? (<span>loading...</span>) : (<span>Signup</span>)}
                         </button>
                     </div>

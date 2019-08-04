@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupContainer Component matches snapshot 1`] = `
+<Signup
+  SignupFailed={false}
+  email=""
+  errors={
+    Object {
+      "invalid_email": false,
+    }
+  }
+  firstname=""
+  handleSubmit={[Function]}
+  isLoading={false}
+  isSigningup={false}
+  lastname=""
+  onChange={[Function]}
+  password=""
+/>
+`;

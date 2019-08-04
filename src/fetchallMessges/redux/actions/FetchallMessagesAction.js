@@ -34,7 +34,6 @@ export const fetchMessages = () => dispatch => {
     });
     return axios.get(allmessageUrl.ALL_MESSAGE_URL, Headers)
         .then(response => {
-            console.log(response.data.data);
             dispatch(getAllMessagesSuccessfully(response.data.data));
         }).catch(error => {
             dispatch(getAllMessagesFailure(error));
