@@ -1,7 +1,6 @@
 import React from 'react';
 import {toast} from 'react-toastify';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import { ToastsContainer, ToastsStore } from 'react-toasts';
 import LoginContainer from './Login/containers/LoginContainer';
 import SignupContainer from './signup/Containers/SignupContainer';
 import MessageContainer from './fetchallMessges/Container/Messagecontainer';
